@@ -1,29 +1,80 @@
-# DA-HA-SAC: Dual-Actuator History-Augmented Reinforcement Learning
+<div align="center">
 
-This repository accompanies the manuscript **“Dual-Actuator History-Augmented Reinforcement Learning for Separation Suppression and Loss Reduction in a Compressor Cascade.”** The study develops a dual-actuator history-augmented soft actor–critic (**DA-HA-SAC**) framework for closed-loop control of suction-surface separation in a two-dimensional NACA 65 compressor cascade.
+# DA-HA-SAC
 
-Two independently controlled actuators are located at 15% and 60% chord and can operate in either blowing or suction mode. The controller uses history-stacked pressure measurements, downstream total-pressure-loss information, and previous actions to account for partial observability and delayed aerodynamic responses. A delay-aware, stage-dependent reward combines reverse-flow suppression, total-pressure-loss reduction, actuation efficiency, and command smoothness. Parallel CFD environments are used to train a single policy at incidence angles of 8°, 11°, and 12°.
+### Dual-Actuator History-Augmented Soft Actor–Critic
+### for Compressor-Cascade Flow Control
 
-The learned policy suppresses suction-surface separation and narrows the downstream high-loss region at all three incidence angles. The peak pitchwise total-pressure-loss coefficient is reduced by more than 30%. Comparisons with mass-flow-matched constant-jet actuation show that the RL policy achieves higher actuation efficiency at all three incidences and improves both loss reduction and efficiency under the more strongly separated conditions. Flow-field analysis further reveals a two-stage mechanism: incidence-dependent transient restructuring through coordinated suction and blowing, followed by predominantly blowing-based quasi-steady maintenance.
+**Closed-loop separation suppression and total-pressure-loss reduction using deep reinforcement learning**
 
-## Flow-control visualisation (0-100 control steps)
+</div>
 
-Incidence = 8°
-[![Flow-control animation](videos/8i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
+---
 
-Incidence = 11°
-[![Flow-control animation](videos/11i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
+## Overview
 
-Incidence = 12°
-[![Flow-control animation](videos/12i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
+This repository accompanies the manuscript:
 
+> **Dual-Actuator History-Augmented Reinforcement Learning for Separation Suppression and Loss Reduction in a Compressor Cascade**
+
+The study develops a **dual-actuator history-augmented soft actor–critic (DA-HA-SAC)** framework for closed-loop control of suction-surface separation in a two-dimensional NACA 65 compressor cascade.
+
+Two independently controlled actuators are positioned at **15% and 60% chord**. Each actuator can operate in either blowing or suction mode. The controller uses history-stacked pressure measurements, downstream total-pressure-loss information, and previous actuator commands to address partial observability and delayed aerodynamic responses.
+
+A delay-aware, stage-dependent reward function combines:
+
+- reverse-flow suppression;
+- total-pressure-loss reduction;
+- actuation efficiency;
+- actuator-command smoothness.
+
+Parallel CFD environments are used to train a single policy at incidence angles of **8°, 11°, and 12°**.
+
+## Main Findings
+
+The learned policy suppresses suction-surface separation and narrows the downstream high-loss region at all three incidence angles.
+
+- The peak pitchwise total-pressure-loss coefficient is reduced by **more than 30%**.
+- The RL policy achieves higher actuation efficiency than mass-flow-matched constant-jet control at all three incidence angles.
+- At **11° and 12°**, RL improves both loss reduction and actuation efficiency.
+- The learned strategy exhibits a two-stage control mechanism:
+  1. incidence-dependent transient restructuring through coordinated suction and blowing;
+  2. predominantly blowing-based quasi-steady flow maintenance.
+
+## Flow-Control Visualisations
+
+The following animations show the controlled flow evolution over **0–100 control steps**.
+
+<table>
+  <tr>
+    <td align="center"><strong>Incidence = 8°</strong></td>
+    <td align="center"><strong>Incidence = 11°</strong></td>
+    <td align="center"><strong>Incidence = 12°</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="videos/8i.gif" alt="Flow-control animation at 8 degrees incidence" width="100%">
+    </td>
+    <td align="center">
+      <img src="videos/11i.gif" alt="Flow-control animation at 11 degrees incidence" width="100%">
+    </td>
+    <td align="center">
+      <img src="videos/12i.gif" alt="Flow-control animation at 12 degrees incidence" width="100%">
+    </td>
+  </tr>
+</table>
+
+> The GIF files play automatically on the GitHub repository page. For best display quality, use the same resolution and aspect ratio for all three animations.
 
 ## Citation
 
-Please cite the associated manuscript when using the methods, data, or visualisations provided in this repository.
+Please cite the associated manuscript when using the methods, results, or visualisations provided in this repository.
+
+Citation information will be updated after publication.
 
 ## Contact
 
 **Yizhou Luo**  
-luoyizhou@stu.hit.edu.cn
-School of Energy Science and Engineering, Harbin Institute of Technology
+School of Energy Science and Engineering  
+Harbin Institute of Technology  
+Email: [luoyizhou@stu.hit.edu.cn](mailto:luoyizhou@stu.hit.edu.cn)
