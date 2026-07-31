@@ -64,8 +64,6 @@ The following animations show the controlled flow evolution over **0–100 contr
   </tr>
 </table>
 
-> The GIF files play automatically on the GitHub repository page. For best display quality, use the same resolution and aspect ratio for all three animations.
-
 ## Citation
 
 Please cite the associated manuscript when using the methods, results, or visualisations provided in this repository.
