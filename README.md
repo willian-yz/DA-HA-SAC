@@ -6,11 +6,17 @@ Two independently controlled actuators are located at 15% and 60% chord and can 
 
 The learned policy suppresses suction-surface separation and narrows the downstream high-loss region at all three incidence angles. The peak pitchwise total-pressure-loss coefficient is reduced by more than 30%. Comparisons with mass-flow-matched constant-jet actuation show that the RL policy achieves higher actuation efficiency at all three incidences and improves both loss reduction and efficiency under the more strongly separated conditions. Flow-field analysis further reveals a two-stage mechanism: incidence-dependent transient restructuring through coordinated suction and blowing, followed by predominantly blowing-based quasi-steady maintenance.
 
-## Flow-control visualisation
+## Flow-control visualisation (0-100 control steps)
 
+Incidence = 8°
+[![Flow-control animation](videos/8i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
+
+Incidence = 11°
 [![Flow-control animation](videos/11i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
 
-The animated preview links to the full automatically playing video hosted with GitHub Pages.
+Incidence = 12°
+[![Flow-control animation](videos/12i.gif)](https://github.com/willian-yz/DA-HA-SAC/)
+
 
 ## Citation
 
@@ -19,4 +25,5 @@ Please cite the associated manuscript when using the methods, data, or visualisa
 ## Contact
 
 **Yizhou Luo**  
+luoyizhou@stu.hit.edu.cn
 School of Energy Science and Engineering, Harbin Institute of Technology
