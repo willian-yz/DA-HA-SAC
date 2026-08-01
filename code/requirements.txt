@@ -1,0 +1,4 @@
+ansys-fluent-core
+gymnasium
+numpy
+stable-baselines3
