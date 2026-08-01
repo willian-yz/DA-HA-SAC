@@ -43,7 +43,7 @@ The learned policy suppresses suction-surface separation and narrows the downstr
 
 ## Flow-Control Visualisations
 
-The following animations show the controlled flow evolution over **0–100 control steps**.
+The following animations compare the **DA-HA-SAC-controlled flow** with the corresponding **uncontrolled baseline** over **0–100 control steps**.
 
 <table>
   <tr>
@@ -53,16 +53,35 @@ The following animations show the controlled flow evolution over **0–100 contr
   </tr>
   <tr>
     <td align="center">
-      <img src="videos/8i.gif" alt="Flow-control animation at 8 degrees incidence" width="100%">
+      <strong>DA-HA-SAC controlled</strong><br><br>
+      <img src="videos/8i.gif" alt="DA-HA-SAC-controlled flow at 8 degrees incidence" width="100%">
     </td>
     <td align="center">
-      <img src="videos/11i.gif" alt="Flow-control animation at 11 degrees incidence" width="100%">
+      <strong>DA-HA-SAC controlled</strong><br><br>
+      <img src="videos/11i.gif" alt="DA-HA-SAC-controlled flow at 11 degrees incidence" width="100%">
     </td>
     <td align="center">
-      <img src="videos/12i.gif" alt="Flow-control animation at 12 degrees incidence" width="100%">
+      <strong>DA-HA-SAC controlled</strong><br><br>
+      <img src="videos/12i.gif" alt="DA-HA-SAC-controlled flow at 12 degrees incidence" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Uncontrolled baseline</strong><br><br>
+      <img src="videos/8i%20baseline.gif" alt="Uncontrolled baseline flow at 8 degrees incidence" width="100%">
+    </td>
+    <td align="center">
+      <strong>Uncontrolled baseline</strong><br><br>
+      <img src="videos/11i%20baseline.gif" alt="Uncontrolled baseline flow at 11 degrees incidence" width="100%">
+    </td>
+    <td align="center">
+      <strong>Uncontrolled baseline</strong><br><br>
+      <img src="videos/12i%20baseline.gif" alt="Uncontrolled baseline flow at 12 degrees incidence" width="100%">
     </td>
   </tr>
 </table>
+
+> For consistent presentation, use the same resolution, aspect ratio, frame rate, and duration for all six animations.
 
 ## Citation
 
